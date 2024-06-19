@@ -4,7 +4,7 @@
     display: flex;
     padding-top: 48px;
 
-    &_logo {
+    &__logo {
         display: flex;
         flex-direction: column;
         width: 33.3%;
@@ -29,7 +29,7 @@
         }
     }
 
-    &_info {
+    &__info {
         width: 33.3%;
         display: flex;
         margin-left: 138px;
@@ -44,7 +44,7 @@
             }
         }
 
-        &-boxes {
+        &-links {
             color: #000;
             font-family: Poppins;
             font-size: 16px;
