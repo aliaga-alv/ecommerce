@@ -1,0 +1,58 @@
+.footer {
+    width: 100%;
+    padding: 0 102.1px;
+    display: flex;
+    padding-top: 48px;
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        width: 33.3%;
+
+        h1 {
+            color: #000;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        p {
+            color: #9F9F9F;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-top: 50px;
+        }
+    }
+
+    &__info {
+        width: 33.3%;
+        display: flex;
+        margin-left: 138px;
+
+        &-content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 46px;
+            & :nth-child(1){
+                color: #9F9F9F;
+            }
+        }
+
+        &-links {
+            color: #000;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            gap: 46px;
+        }
+    }
+
+}
