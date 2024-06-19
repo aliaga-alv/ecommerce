@@ -1,93 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header__logo">
-            <img class="header__logo-img" src="./assets/icons/Meubel House_Logos-05.svg" alt="">
-            <h6 class="header__logo-title">Furniro</h6>
-        </div>
-        <div class="header__navbar">
-            <ul class="header__navbar-list">
-                <li class="header__navbar-list-title">Home</li>
-                <li class="header__navbar-list-title">Shop</li>
-                <li class="header__navbar-list-title">About</li>
-                <li class="header__navbar-list-title">Contact</li>
-            </ul>
-        </div>
-        <div class="header__burger">
-            <img class="header__burger-icon" src="./assets/icons/mdi_account-alert-outline.svg" alt="">
-            <img class="header__burger-icon" src="./assets/icons/akar-icons_search.svg" alt="">
-            <img class="header__burger-icon" src="./assets/icons/akar-icons_heart.svg" alt="">
-            <img class="header__burger-icon" src="./assets/icons/ant-design_shopping-cart-outlined.svg" alt="">
-        </div>
+      <div class="header__logo">
+        <img
+          class="header__logo-img"
+          src="./assets/icons/Meubel House_Logos-05.svg"
+          alt=""
+        />
+        <h6 class="header__logo-title">Furniro</h6>
+      </div>
+      <div class="header__navbar">
+        <ul class="header__navbar-list">
+          <li class="header__navbar-list-title">Home</li>
+          <li class="header__navbar-list-title">Shop</li>
+          <li class="header__navbar-list-title">About</li>
+          <li class="header__navbar-list-title">Contact</li>
+        </ul>
+      </div>
+      <div class="header__burger">
+        <img
+          class="header__burger-icon"
+          src="./assets/icons/mdi_account-alert-outline.svg"
+          alt=""
+        />
+        <img
+          class="header__burger-icon"
+          src="./assets/icons/akar-icons_search.svg"
+          alt=""
+        />
+        <img
+          class="header__burger-icon"
+          src="./assets/icons/akar-icons_heart.svg"
+          alt=""
+        />
+        <img
+          class="header__burger-icon"
+          src="./assets/icons/ant-design_shopping-cart-outlined.svg"
+          alt=""
+        />
+      </div>
     </header>
     <main>
+      <section class="discover">
+        <div class="discover__content">
+          <div class="discover__content-text">
+            <h5 class="discover__content-titleMeta">New Arrival</h5>
+            <h1 class="discover__content-title">
+              Discover Our <br />New Collection
+            </h1>
+            <p class="discover__content-p">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Laudantium, molestias..
+            </p>
+            <button class="button discover__content-button">Buy now</button>
+          </div>
+        </div>
+      </section>
 
+      <section class="browsetherange">
+        <div class="browsetherange__header">
+          <h1>Browse The Range</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="browsetherange__carts">
+          <div class="browsetherange__cart">
+            <img src="assets/images/image 106.png" alt="" />
+            <h1>Dining</h1>
+          </div>
+          <div class="browsetherange__cart">
+            <img src="assets/images/image 100.png" alt="" />
+            <h1>Living</h1>
+          </div>
+          <div class="browsetherange__cart">
+            <img src="assets/images/image 101.png" alt="" />
+            <h1>Bedroom</h1>
+          </div>
+        </div>
+      </section>
 
-        <section class="browsetherange">
-            <div class="browsetherange__header">
-                <h1>Browse The Range</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <section class="product">
+        <h1 class="product__title">Our products</h1>
+        <div class="product__cards">
+          <div class="card">
+            <img class="card__img" src="./assets/images/image 1.png" alt="" />
+            <div class="card__main">
+              <h1 class="card__main-title">Syltherine</h1>
+              <p class="card__main-name">Stylish cafe chair</p>
+              <div class="card__prices">
+                <p class="card__price-now">Rp 2.500.000</p>
+                <p class="card__price-decrese">Rp 3.500.000</p>
+              </div>
             </div>
-            <div class="browsetherange__carts">
-                <div class="browsetherange__cart">
-                    <img src="assets/images/image 106.png" alt="">
-                    <h1>Dining</h1>
-                </div>
-                <div class="browsetherange__cart">
-                    <img src="assets/images/image 100.png" alt="">
-                    <h1>Living</h1>
-                </div>
-                <div class="browsetherange__cart">
-                    <img src="assets/images/image 101.png" alt="">
-                    <h1>Bedroom</h1>
-                </div>
-
+          </div>
+          <div class="card__hovered">
+            <div class="card__hover-btn">
+              <button class="hover-btn">Add to cart</button>
             </div>
-        </section>
 
-        <section class="product">
-            <h1 class="product__title">Our products</h1>
-            <div class="product__cards">
-                <div class="card">
-                    <img class="card__img" src="./assets/images/image 1.png" alt="">
-                    <div class="card__main">
-                        <h1 class="card__main-title">Syltherine</h1>
-                        <p class="card__main-name">Stylish cafe chair</p>
-                        <div class="card__prices">
-                            <p class="card__price-now">Rp 2.500.000</p>
-                            <p class="card__price-decrese">Rp 3.500.000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card__hovered">
-                    <div class="card__hover-btn">
-                        <button class="hover-btn">Add to cart</button>
-                    </div>
-
-                    <div class="card__hover-icons">
-                        <a class="card__hover-shareIcon" href="">
-                            <img src="./assets/icons/gridicons_share.svg" alt="">
-                            <p>Share</p>
-                        </a>
-                        <a href="">
-                            <img src="" alt="">
-                        </a>
-                        <a href="">
-                            <img src="" alt="">
-                        </a>
-                    </div>
-                </div>
+            <div class="card__hover-icons">
+              <a class="card__hover-shareIcon" href="">
+                <img src="./assets/icons/gridicons_share.svg" alt="" />
+                <p>Share</p>
+              </a>
+              <a href="">
+                <img src="" alt="" />
+              </a>
+              <a href="">
+                <img src="" alt="" />
+              </a>
             </div>
         </section>
     </main>
