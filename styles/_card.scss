@@ -1,0 +1,90 @@
+.card {
+    display: flex;
+    width: 285px;
+    flex-direction: column;
+
+    &__img {
+    }
+    &__main {
+        /* Сверху | Справа | Снизу | Слева */
+        padding: 16px 20px 30px 16px;
+        background: $lightBG;
+        &-title {
+            color: $grey1;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            padding-bottom: 8px;
+        }
+        &-name {
+            color: $grey3;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 150%; /* 24px */
+        }
+        .card__prices {
+            display: inline-flex;
+            align-items: center;
+            gap: 16px;
+
+            .card__price-now {
+                color: $grey1;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 30px */
+            }
+            .card__price-decrese {
+                color: $grey4;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 150%; /* 24px */
+                text-decoration-line: strikethrough;
+            }
+        }
+    }
+}
+.card__hover {
+    /* Сверху | Справа | Снизу | Слева */
+
+    background: $grey1;
+    &-btn {
+        padding: 175px 41px 0px 41px;
+        .hover-btn {
+            width: 202px;
+            height: 48px;
+            background: $white;
+            color: $primary;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; /* 24px */
+        }
+    }
+    &-icons {
+        /* Сверху | Справа | Снизу | Слева */
+        padding: 34px 16px 175px 16px;
+    }
+    &-shareIcon {
+        color: black;
+    }
+    &-shareIcon {
+        display: flex;
+        text-decoration: none;
+        color: $white;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 24px */
+        gap: 2px;
+    }
+}
