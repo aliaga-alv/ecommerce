@@ -60,13 +60,13 @@
                 &-1 {
                     width: 404px;
                     height: 582px;
-                    
+
                 }
 
                 &-2 {
                     width: 372px;
                     height: 486px;
-                    
+
                 }
             }
 
@@ -172,7 +172,8 @@
                 background-size: cover;
                 background-position: center;
                 border-radius: 50%;
-                border: none;    
+                border: none;
+
                 &:focus {
                     width: 27px;
                     height: 27px;
@@ -181,11 +182,11 @@
                     background-size: cover;
                     background-position: center;
                     border-radius: 50%;
-                    border: none; 
+                    border: none;
                 }
 
             }
-            
+
 
         }
     }
