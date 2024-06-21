@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     flex-direction: column;
-   
+
 }
 
 .footer__body {
@@ -12,8 +12,9 @@
     justify-content: space-around;
     gap: 50px;
     padding: 48px 102.1px 48px 102.1px;
-    &-line{
-        padding: 0px 102.1px 1px 102.1px ;
+
+    &-line {
+        padding: 0px 102.1px 1px 102.1px;
         margin: 0 102.1px 0 102.1px;
     }
 
@@ -45,35 +46,57 @@
     &-info {
         width: 33.3%;
         display: flex;
-        margin-left: 138px;
+        margin-left:auto;
         flex-direction: row;
         gap: 70px;
-        
+
 
         &-content {
             display: flex;
             flex-direction: column;
             gap: 46px;
 
-            & :nth-child(1) {
-                color: #9F9F9F;
-            }
-        }
+            &-link {
+                text-decoration: none;
+                list-style-type: none;
+                list-style: none;
+                cursor: pointer;
 
-        &-links {
-            color: #000;
-            font-family: Poppins;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            gap: 46px;
+
+                &-h1 {
+                    color: #9F9F9F;
+                    font-family: Poppins;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+            }
+
+            &-link a {
+                text-decoration: none;
+                list-style-type: none;
+                list-style: none;
+                cursor: pointer;
+                color: #000;
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+
         }
     }
 
     &-form {
         & :nth-child(1) {
             color: #9F9F9F;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
         }
 
         &-detail {
