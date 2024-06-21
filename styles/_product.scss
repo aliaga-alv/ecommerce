@@ -13,8 +13,9 @@
     }
     &__cards {
         margin-top: 32px;
-        display: inline-flex;
+        display: flex;
         align-items: center;
         gap: 32px;
+        flex-wrap: wrap;
     }
 }
