@@ -4,15 +4,23 @@ var sass = require("gulp-sass")(require("sass"));
 
 function kompail() {
     return gulp
-    .src("./styles/style.scss")
-    .pipe(sass.sync())
-    .pipe(gulp.dest("./public"))
+        .src("./styles/style.scss")
+        .pipe(sass.sync())
+        .pipe(gulp.dest("./public"))
 
 }
 
-function sassWatch(){
-    return gulp.watch(['./styles/*.scss'], kompail)
+function sassWatch() {
+     kompail, gulp.watch(['./styles/*.scss'], kompail)
 }
 
-exports.default = kompail
-exports.style = sassWatch
+function buildStyles(){
+    kompail()
+    sassWatch()
+}
+
+
+
+gulp.task('watch sass', buildStyles); 
+gulp.task('style', gulp.series('watch sass'));
+gulp.task('default', kompail);
