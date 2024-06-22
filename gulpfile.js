@@ -1,6 +1,12 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass")(require("sass"));
+var clean = require("gulp-clean")
 
+
+function cleanCss() {
+    return gulp.src('public', { read: false, allowEmpty: true })
+        .pipe(clean());
+}
 
 function kompail() {
     return gulp
@@ -11,16 +17,17 @@ function kompail() {
 }
 
 function sassWatch() {
-     kompail, gulp.watch(['./styles/*.scss'], kompail)
+    gulp.watch(['./styles/*.scss'], kompail)
 }
 
-function buildStyles(){
+function buildStyles() {
+    cleanCss()
     kompail()
     sassWatch()
 }
 
-
-
-gulp.task('watch sass', buildStyles); 
-gulp.task('style', gulp.series('watch sass'));
+gulp.task("compile", kompail)
+gulp.task('clean', cleanCss);
+gulp.task('watch sass', buildStyles);
+gulp.task('style', gulp.series('clean', 'watch sass'));
 gulp.task('default', kompail);
