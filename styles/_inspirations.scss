@@ -2,6 +2,10 @@
     background: #FCF8F3;
     display: flex;
 
+    &__body {
+        display: flex;
+        width: 100%;
+    }
     &__title {
         display: flex;
         padding: 223px 42px 223px 100px;
@@ -16,7 +20,7 @@
             font-weight: 700;
             line-height: 120%;
             /* 48px */
-            width: 422px;
+            //width: 422px;
         }
 
         &-p {
@@ -27,7 +31,7 @@
             font-weight: 500;
             line-height: 150%;
             /* 24px */
-            width: 368px;
+            //width: 368px;
             padding: 0px 0px 25px 0px;
         }
 
@@ -50,26 +54,42 @@
         padding: 44px 0px 44px 0px;
         gap: 24px;
         position: relative;
+        margin-left: auto;
 
         &-cart {
+            display: flex;
+            flex-direction: column;
             position: relative;
-
             &-img {
                 display: block;
 
                 &-1 {
-                    width: 404px;
+                    position: relative;
+                    //width: 404px;
                     height: 582px;
-
+                    display: flex;
+                    //max-width: 100%;
+                    //max-height: 100%;
+                    //height: auto;
                 }
 
                 &-2 {
                     width: 372px;
                     height: 486px;
-
+                    //display: flex;
+                    //max-width: 100%;
+                    //max-height: 100%;
+                    //height: auto;
                 }
+                /*&-3 {
+                    //width: 372px;
+                    //height: 486px;
+                    //display: flex;
+                    //max-width: 100%;
+                    //max-height: 100%;
+                    //height: auto;
+                }*/
             }
-
             &-title {
                 position: absolute;
                 top: 428px;
@@ -79,17 +99,17 @@
                 background: rgba(255, 255, 255, 0.72);
                 backdrop-filter: blur(1.5px);
                 gap: 8px;
-
+                max-width: 100%;
+                    max-height: 100%;
+                    height: auto;
                 &-1 {
                     display: flex;
                     flex-direction: row;
                     padding: 32px 43px 0px 32px;
                     gap: 8px;
-
                     &-img {
                         stroke-width: 1px;
                         stroke: var(--Color-Gray-2, #616161);
-
                     }
                 }
 
