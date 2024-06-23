@@ -2,3 +2,4 @@ public
 .vscode
 node_modules
 inner.html
+package-lock.json

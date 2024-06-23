@@ -11,6 +11,18 @@
 </head>
 
 <body>
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("button");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
     <header class="header">
         <div class="header__logo">
             <img class="header__logo-img" src="./assets/icons/Meubel House_Logos-05.svg" alt="" />
@@ -31,7 +43,252 @@
             <img class="header__burger-icon" src="./assets/icons/ant-design_shopping-cart-outlined.svg" alt="" />
         </div>
     </header>
-    <main style="height: 1000px; ">
+    <main>
+
+        <section class="shop">
+            <h1 class="shop__title">Our shops</h1>
+            <div class="shop__cards">
+                <div id="" class="card">
+                    <img class="card__img" src="./assets/images/image 1.png" alt="" />
+                    <div class="card__main">
+                        <h1 class="card__main-title">Syltherine</h1>
+                        <p class="card__main-name">Stylish cafe chair</p>
+                        <div class="card__prices">
+                            <p class="card__price-now">Rp 2.500.000</p>
+                            <p class="card__price-decrese">Rp 3.500.000</p>
+                        </div>
+                    </div>
+                    <div class="card__hovered">
+                        <button class="card__hovered-btn">Add to cart</button>
+
+                        <div class="card__hovered-icons">
+                            <a class="card__hovered-shareIcon" href="">
+                                <img src="./assets/icons/gridicons_share.svg" alt="" />
+                                <h4>Share</h4>
+                            </a>
+                            <a class="card__hovered-compare" href="">
+                                <img src="./assets/icons/compare-svgrepo-com 1.svg" alt="" />
+                                <h4>Compare</h4>
+                            </a>
+                            <a class="card__hovered-like" href="">
+                                <img src="./assets/icons/Heart.svg" alt="" />
+                                <h4>like</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./assets/images/image 1.png" alt="" />
+                    <div class="card__main">
+                        <h1 class="card__main-title">Syltherine</h1>
+                        <p class="card__main-name">Stylish cafe chair</p>
+                        <div class="card__prices">
+                            <p class="card__price-now">Rp 2.500.000</p>
+                            <p class="card__price-decrese">Rp 3.500.000</p>
+                        </div>
+                    </div>
+                    <div class="card__hovered">
+                        <button class="card__hovered-btn">Add to cart</button>
+
+                        <div class="card__hovered-icons">
+                            <a class="card__hovered-shareIcon" href="">
+                                <img src="./assets/icons/gridicons_share.svg" alt="" />
+                                <h4>Share</h4>
+                            </a>
+                            <a class="card__hovered-compare" href="">
+                                <img src="./assets/icons/compare-svgrepo-com 1.svg" alt="" />
+                                <h4>Compare</h4>
+                            </a>
+                            <a class="card__hovered-like" href="">
+                                <img src="./assets/icons/Heart.svg" alt="" />
+                                <h4>like</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./assets/images/image 1.png" alt="" />
+                    <div class="card__main">
+                        <h1 class="card__main-title">Syltherine</h1>
+                        <p class="card__main-name">Stylish cafe chair</p>
+                        <div class="card__prices">
+                            <p class="card__price-now">Rp 2.500.000</p>
+                            <p class="card__price-decrese">Rp 3.500.000</p>
+                        </div>
+                    </div>
+                    <div class="card__hovered">
+                        <button class="card__hovered-btn">Add to cart</button>
+
+                        <div class="card__hovered-icons">
+                            <a class="card__hovered-shareIcon" href="">
+                                <img src="./assets/icons/gridicons_share.svg" alt="" />
+                                <h4>Share</h4>
+                            </a>
+                            <a class="card__hovered-compare" href="">
+                                <img src="./assets/icons/compare-svgrepo-com 1.svg" alt="" />
+                                <h4>Compare</h4>
+                            </a>
+                            <a class="card__hovered-like" href="">
+                                <img src="./assets/icons/Heart.svg" alt="" />
+                                <h4>like</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./assets/images/image 1.png" alt="" />
+                    <div class="card__main">
+                        <h1 class="card__main-title">Syltherine</h1>
+                        <p class="card__main-name">Stylish cafe chair</p>
+                        <div class="card__prices">
+                            <p class="card__price-now">Rp 2.500.000</p>
+                            <p class="card__price-decrese">Rp 3.500.000</p>
+                        </div>
+                    </div>
+                    <div class="card__hovered">
+                        <button class="card__hovered-btn">Add to cart</button>
+
+                        <div class="card__hovered-icons">
+                            <a class="card__hovered-shareIcon" href="">
+                                <img src="./assets/icons/gridicons_share.svg" alt="" />
+                                <h4>Share</h4>
+                            </a>
+                            <a class="card__hovered-compare" href="">
+                                <img src="./assets/icons/compare-svgrepo-com 1.svg" alt="" />
+                                <h4>Compare</h4>
+                            </a>
+                            <a class="card__hovered-like" href="">
+                                <img src="./assets/icons/Heart.svg" alt="" />
+                                <h4>like</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./assets/images/image 1.png" alt="" />
+                    <div class="card__main">
+                        <h1 class="card__main-title">Syltherine</h1>
+                        <p class="card__main-name">Stylish cafe chair</p>
+                        <div class="card__prices">
+                            <p class="card__price-now">Rp 2.500.000</p>
+                            <p class="card__price-decrese">Rp 3.500.000</p>
+                        </div>
+                    </div>
+                    <div class="card__hovered">
+                        <button class="card__hovered-btn">Add to cart</button>
+
+                        <div class="card__hovered-icons">
+                            <a class="card__hovered-shareIcon" href="">
+                                <img src="./assets/icons/gridicons_share.svg" alt="" />
+                                <h4>Share</h4>
+                            </a>
+                            <a class="card__hovered-compare" href="">
+                                <img src="./assets/icons/compare-svgrepo-com 1.svg" alt="" />
+                                <h4>Compare</h4>
+                            </a>
+                            <a class="card__hovered-like" href="">
+                                <img src="./assets/icons/Heart.svg" alt="" />
+                                <h4>like</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./assets/images/image 1.png" alt="" />
+                    <div class="card__main">
+                        <h1 class="card__main-title">Syltherine</h1>
+                        <p class="card__main-name">Stylish cafe chair</p>
+                        <div class="card__prices">
+                            <p class="card__price-now">Rp 2.500.000</p>
+                            <p class="card__price-decrese">Rp 3.500.000</p>
+                        </div>
+                    </div>
+                    <div class="card__hovered">
+                        <button class="card__hovered-btn">Add to cart</button>
+
+                        <div class="card__hovered-icons">
+                            <a class="card__hovered-shareIcon" href="">
+                                <img src="./assets/icons/gridicons_share.svg" alt="" />
+                                <h4>Share</h4>
+                            </a>
+                            <a class="card__hovered-compare" href="">
+                                <img src="./assets/icons/compare-svgrepo-com 1.svg" alt="" />
+                                <h4>Compare</h4>
+                            </a>
+                            <a class="card__hovered-like" href="">
+                                <img src="./assets/icons/Heart.svg" alt="" />
+                                <h4>like</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./assets/images/image 1.png" alt="" />
+                    <div class="card__main">
+                        <h1 class="card__main-title">Syltherine</h1>
+                        <p class="card__main-name">Stylish cafe chair</p>
+                        <div class="card__prices">
+                            <p class="card__price-now">Rp 2.500.000</p>
+                            <p class="card__price-decrese">Rp 3.500.000</p>
+                        </div>
+                    </div>
+                    <div class="card__hovered">
+                        <button class="card__hovered-btn">Add to cart</button>
+
+                        <div class="card__hovered-icons">
+                            <a class="card__hovered-shareIcon" href="">
+                                <img src="./assets/icons/gridicons_share.svg" alt="" />
+                                <h4>Share</h4>
+                            </a>
+                            <a class="card__hovered-compare" href="">
+                                <img src="./assets/icons/compare-svgrepo-com 1.svg" alt="" />
+                                <h4>Compare</h4>
+                            </a>
+                            <a class="card__hovered-like" href="">
+                                <img src="./assets/icons/Heart.svg" alt="" />
+                                <h4>like</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card__img" src="./assets/images/image 1.png" alt="" />
+                    <div class="card__main">
+                        <h1 class="card__main-title">Syltherine</h1>
+                        <p class="card__main-name">Stylish cafe chair</p>
+                        <div class="card__prices">
+                            <p class="card__price-now">Rp 2.500.000</p>
+                            <p class="card__price-decrese">Rp 3.500.000</p>
+                        </div>
+                    </div>
+                    <div class="card__hovered">
+                        <button class="card__hovered-btn">Add to cart</button>
+
+                        <div class="card__hovered-icons">
+                            <a class="card__hovered-shareIcon" href="">
+                                <img src="./assets/icons/gridicons_share.svg" alt="" />
+                                <h4>Share</h4>
+                            </a>
+                            <a class="card__hovered-compare" href="">
+                                <img src="./assets/icons/compare-svgrepo-com 1.svg" alt="" />
+                                <h4>Compare</h4>
+                            </a>
+                            <a class="card__hovered-like" href="">
+                                <img src="./assets/icons/Heart.svg" alt="" />
+                                <h4>like</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="myDIV" class="shop__nextButton">
+                <button class="shop__nextButton-btn active"><a href="./shop.html">1</a></button>
+                <button class="shop__nextButton-btn "><a href="./shop.html">2</a></button>
+                <button class="shop__nextButton-btn "><a href="./shop.html">3</a></button>
+                <button class='shop__nextButton-btn '><a href="./shop.html">next</a></button>
+            </div>
+        </section>
 
     </main>
     <footer class="footer">
@@ -71,6 +328,8 @@
         </div>
 
     </footer>
+
+
 </body>
 
 

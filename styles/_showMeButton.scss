@@ -1,0 +1,17 @@
+.product__button {
+    &-btn {
+        height: 48px;
+        background-color: rgb(255, 255, 255);
+        border:1px solid var(--Primary, #B88E2F);
+        a {
+            color:  var(--Primary, #B88E2F);
+            padding: 12px 82px 12px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; /* 24px */
+            text-decoration: none;
+        }
+    }
+}
