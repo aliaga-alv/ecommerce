@@ -4,7 +4,7 @@
   height: 316px;
   text-align: center;
   justify-content: center;
-  background-image: url(../src/assets/images/shopcover.png);
+  background-image: url("../src/assets/images/shopcover.png");
 
   &__box {
     width: 124px;
@@ -29,7 +29,7 @@
       &-icon {
         width: 20px;
         height: 20px;
-        background: url(../src/assets/icons/shoparrow.svg);
+        background: url("../src/assets/icons/shoparrow.svg");
         margin: 2px 0 0 5px;
       }
 

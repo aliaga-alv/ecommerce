@@ -5,16 +5,14 @@
 
 .footer__body {
   display: flex;
-  padding: 0 102.1px;
-  display: flex;
   padding-top: 48px;
   justify-content: space-around;
   gap: 50px;
-  padding: 48px 102.1px 48px 102.1px;
+  padding: 48px 102.1px;
 
   &-line {
-    padding: 0px 102.1px 1px 102.1px;
-    margin: 0 102.1px 0 102.1px;
+    padding: 0 102.1px 1px;
+    margin: 0 102.1px;
   }
 
   &-logo {
@@ -120,7 +118,7 @@
 
   &-rights {
     display: flex;
-    padding: 38px 0 38px 0;
+    padding: 38px 0;
 
     &-data {
       color: #000;

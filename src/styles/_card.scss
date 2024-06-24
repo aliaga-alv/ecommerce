@@ -1,5 +1,6 @@
 .card {
   display: flex;
+
   /* width: 285px; */
   flex-direction: column;
   position: relative;
@@ -15,6 +16,7 @@
     border: none;
     background-color: $redAccents;
     color: $white;
+
     &--new {
       position: absolute;
       top: 24px;
@@ -32,6 +34,7 @@
     /* Сверху | Справа | Снизу | Слева */
     padding: 16px 20px 30px 16px;
     background: $lightBG;
+
     &-title {
       color: $grey1;
       font-family: Poppins;
@@ -41,6 +44,7 @@
       line-height: 120%;
       padding-bottom: 8px;
     }
+
     &-name {
       color: $grey3;
       font-family: Poppins;
@@ -50,11 +54,13 @@
       line-height: 150%; /* 24px */
     }
   }
+
   &__prices {
     display: inline-flex;
     align-items: center;
     gap: 16px;
   }
+
   &__price-now {
     color: $grey1;
     font-family: Poppins;
@@ -63,6 +69,7 @@
     font-weight: 600;
     line-height: 150%; /* 30px */
   }
+
   &__price-decrese {
     color: $grey4;
     font-family: Poppins;
@@ -72,6 +79,7 @@
     line-height: 150%; /* 24px */
     text-decoration-line: strikethrough;
   }
+
   &__hovered {
     /* Сверху | Справа | Снизу | Слева */
     position: absolute;
@@ -85,6 +93,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+
     &-btn {
       width: 202px;
       height: 48px;
@@ -98,15 +107,18 @@
       cursor: pointer;
       border: none;
     }
+
     &-icons {
       /* Сверху | Справа | Снизу | Слева */
-      padding: 34px 16px 175px 16px;
+      padding: 34px 16px 175px;
       display: flex;
       gap: 20px;
     }
+
     &-shareIcon {
       color: black;
     }
+
     &-shareIcon {
       display: flex;
       text-decoration: none;
@@ -118,6 +130,7 @@
       line-height: 150%; /* 24px */
       gap: 2px;
     }
+
     &-compare {
       display: flex;
       color: $white;
@@ -129,6 +142,7 @@
       gap: 2px;
       text-decoration: none;
     }
+
     &-like {
       display: flex;
       color: $white;
@@ -141,6 +155,7 @@
       text-decoration: none;
     }
   }
+
   &:hover {
     .card__hovered {
       opacity: 0.72;
