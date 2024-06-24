@@ -1,8 +1,15 @@
 .funiro {
-  display: flex;
   flex-direction: column;
-  padding: 65px 0 50px 0;
-  //   TITLE
+  padding: 65px 0px 50px;
+  
+  overflow: hidden;
+  justify-content: space-between;
+ 
+
+  &-title {
+    position: absolute;
+  }
+
   &-p {
     color: var(--Color-Gray-2, #616161);
     text-align: center;
@@ -10,7 +17,7 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; /* 30px */
+    line-height: 150%; 
   }
 
   &-h1 {
@@ -20,17 +27,22 @@
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 120%; /* 48px */
+    line-height: 100%; 
   }
+
   &__images {
+   
     display: flex;
     gap: 16px;
     align-items: center;
-    overflow: hidden;
+
     &-left {
       display: flex;
       flex-direction: column;
+      align-items: end;
       gap: 16px;
+      flex-grow: 1;
+
       &-top {
         display: flex;
         gap: 16px;
@@ -40,7 +52,7 @@
           height: 382px;
         }
         &-image3 {
-          width: 451px;
+          width: 400px;
           height: 312px;
         }
       }
@@ -58,6 +70,16 @@
         }
       }
     }
+
+    &-center {
+      display: flex;
+      position: relative;
+      width: 100%;
+      &-image5 {
+        margin: 0 auto;
+      }
+    }
+
     &-right {
       display: flex;
       flex-direction: column;
@@ -85,8 +107,7 @@
           height: 242px;
         }
         &-image8 {
-          width: 258px;
-          height: 196px;
+          width: 500px;
         }
       }
     }
