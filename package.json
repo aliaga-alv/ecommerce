@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "gulp",
     "sass-w": "gulp style",
-    "prepare": "husky"
+    "lint": "stylelint 'src/**/*.scss' --fix"
   },
   "author": "",
   "license": "ISC",
@@ -22,10 +22,14 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
-    "sass": "^1.77.6"
+    "sass": "^1.77.6",
+    "stylelint": "^16.6.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-scss": "^6.3.2"
   },
   "lint-staged": {
     "src/**/*": [
+      "npm run lint",
       "eslint",
       "prettier --write",
       "git add ."
