@@ -1,0 +1,160 @@
+.filter {
+    //width: 1440px;
+    //height: 100px;
+    //flex-shrink: 0;
+    background: #F9F1E7;
+    padding: 22px 100px 22px 100px;
+    display: flex;
+
+    &__buttons {
+        border-right: 1px #9F9F9F;
+        display: flex;
+        gap: 24px;
+
+        &-filtering {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            &-a {
+                width: 27px;
+                height: 26px;
+                background-image: url(../assets/icons/filtering.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            &-h1 {
+                color: #000;
+                font-family: Poppins;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+
+        }
+
+        &-listing {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+
+            &-grid {
+                width: 27px;
+                height: 26px;
+                background-image: url(../assets/icons/grid-filtering.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            &-viewlist {
+                width: 27px;
+                height: 26px;
+                background-image: url(../assets/icons/view-list-filtering.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                background-color: none;
+            }
+
+        }
+
+
+    }
+
+    &__result-text {
+        color: #000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        align-content: center;
+    }
+
+    &__inputs {
+        border-right: 1px #9F9F9F;
+        display: flex;
+        gap: 24px;
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+
+
+        &-show {
+            color: #000;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &-count {
+                width: 55px;
+                height: 55px;
+                flex-shrink: 0;
+            }
+        }
+
+
+        &-short {
+            color: #000;
+            font-family: Poppins;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &-select {
+            width: 188px;
+            height: 55px;
+            flex-shrink: 0;
+        }
+    }
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+    color: #9F9F9F;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    border: none;
+}
+
+
+.filter__inputs-select {
+    color: #9F9F9F;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    background-color: white;
+    appearance: none;
+    padding-left: 30px;
+    
+}
+
+.filter__inputs-select > option {
+    color: #9F9F9F;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+    
+}
