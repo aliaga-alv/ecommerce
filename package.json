@@ -28,7 +28,7 @@
     "src/**/*": [
       "eslint",
       "prettier --write",
-      "git add -A"
+      "git add ."
     ]
   }
 }
