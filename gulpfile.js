@@ -11,7 +11,7 @@ function cleanCss() {
 function kompail() {
     return gulp
         .src("./styles/style.scss")
-        .pipe(sass.sync())
+        .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest("./public"))
 
 }

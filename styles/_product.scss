@@ -1,7 +1,17 @@
 .product {
     padding: 56px 102px 69px 102px;
+    &__nextButton {
+        display: flex;
+        justify-content: center;
+        color: aqua;
+    }
+    &__button{
+        display: flex;
+        justify-content: center;
+        color: $primary;
+        margin: 32px;
+    }
 
-    border: 1px solid $black;
     &__title {
         color: $grey1;
         text-align: center;
