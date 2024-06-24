@@ -6,6 +6,31 @@
     flex-basis: calc(25% - 32px);
     &__img {
     }
+    
+    &__ellipse {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        border: none;
+        background-color:$redAccents;
+        color: $white;
+        &--new{
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            border-radius: 100%;
+            border: none;
+            background-color:var(--Color-Green-Accents, #2EC1AC);
+            color: $white;
+    
+        }
+    }
+    
     &__main {
         /* Сверху | Справа | Снизу | Слева */
         padding: 16px 20px 30px 16px;
@@ -74,6 +99,7 @@
             font-weight: 600;
             line-height: 150%; /* 24px */
             cursor: pointer;
+            border: none;
         }
         &-icons {
             /* Сверху | Справа | Снизу | Слева */
