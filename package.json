@@ -25,8 +25,8 @@
     "sass": "^1.77.6"
   },
   "lint-staged": {
-    "./**/*.{js,scss,html}": [
-      "eslint --fix",
+    "src/**/*.{js,scss,html}": [
+      "eslint",
       "prettier --write"
     ]
   }
