@@ -27,7 +27,8 @@
   "lint-staged": {
     "src/**/*": [
       "eslint",
-      "prettier --write"
+      "prettier --write",
+      "git add -A"
     ]
   }
 }
