@@ -52,6 +52,13 @@
   }
 
   &__burger {
+    a{
+      button{
+        border: none;
+        background: gray;
+        text-align: center;
+      }
+    }
     &-icon {
       padding-right: 45px;
     }
