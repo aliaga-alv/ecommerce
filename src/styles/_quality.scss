@@ -1,5 +1,5 @@
 .quality {
-  background: #faf3ea;
+  background: $white;
   display: flex;
   padding: 100px 0;
 
@@ -13,20 +13,19 @@
       display: flex;
       justify-content: space-around;
       gap: 20px;
-      align-items: self-end;
 
-      & h3 {
-        color: #242424;
-        font-family: Poppins;
+      // TODO: [Qurban] fix
+      h3 {
+        color: $fontColor;
         font-size: 25px;
         font-style: normal;
         font-weight: 600;
         line-height: 150%;
       }
 
-      & p {
-        color: var(--Color-Gray-3, #898989);
-        font-family: Poppins;
+      // TODO: [Qurban] fix
+      p {
+        color: $grey3;
         font-size: 20px;
         font-style: normal;
         font-weight: 500;

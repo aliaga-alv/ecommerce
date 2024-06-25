@@ -5,7 +5,6 @@
   flex-direction: column;
   position: relative;
   flex-basis: calc(25% - 32px);
-  
 
   &__ellipse {
     position: absolute;
@@ -26,7 +25,7 @@
       height: 48px;
       border-radius: 100%;
       border: none;
-      background-color: var(--Color-Green-Accents, #2ec1ac);
+      background-color: $greenAccents;
       color: $white;
     }
   }
@@ -38,7 +37,6 @@
 
     &-title {
       color: $grey1;
-      font-family: Poppins;
       font-size: 24px;
       font-style: normal;
       font-weight: 600;
@@ -48,7 +46,6 @@
 
     &-name {
       color: $grey3;
-      font-family: Poppins;
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -60,12 +57,10 @@
     display: inline-flex;
     align-items: center;
     gap: 16px;
-    
   }
 
   &__price-now {
     color: $grey1;
-    font-family: Poppins;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -74,7 +69,6 @@
 
   &__price-decrese {
     color: $grey4;
-    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -101,7 +95,6 @@
       height: 48px;
       background: $white;
       color: $primary;
-      font-family: Poppins;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -118,14 +111,9 @@
     }
 
     &-shareIcon {
-      color: black;
-    }
-
-    &-shareIcon {
       display: flex;
       text-decoration: none;
       color: $white;
-      font-family: Poppins;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -136,7 +124,6 @@
     &-compare {
       display: flex;
       color: $white;
-      font-family: Poppins;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -148,7 +135,6 @@
     &-like {
       display: flex;
       color: $white;
-      font-family: Poppins;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -159,6 +145,7 @@
   }
 
   &:hover {
+    // stylelint-disable-next-line
     .card__hovered {
       opacity: 0.72;
     }

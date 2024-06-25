@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: $white;
 
   &__logo {
     display: flex;
@@ -16,8 +16,8 @@
     }
 
     &-title {
-      color: #000;
-      font-family: Montserrat;
+      color: $black;
+      font-family: Montserrat, sans-serif;
       font-size: 34px;
       font-style: normal;
       font-weight: 700;
@@ -31,17 +31,16 @@
 
       &-title {
         padding-right: 75px;
-        color: #000;
-        font-family: Poppins;
+        color: $black;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
 
+        // TODO: [Enver] don't give styles to tag names
         a {
           text-decoration: none;
-          color: #000;
-          font-family: Poppins;
+          color: $black;
           font-size: 16px;
           font-style: normal;
           font-weight: 500;
@@ -52,13 +51,14 @@
   }
 
   &__burger {
-    a{
-      button{
+    a {
+      button {
         border: none;
         background: gray;
         text-align: center;
       }
     }
+
     &-icon {
       padding-right: 45px;
     }

@@ -1,5 +1,5 @@
 .inspirations {
-  background: #fcf8f3;
+  background: $cream;
   display: flex;
 
   &__body {
@@ -12,44 +12,34 @@
     padding: 223px 42px 223px 100px;
     flex-direction: column;
 
+    // TODO: [Tonto] don't use tag names as class names, rgb use variable
     &-h1 {
-      color: var(--Color-Gray-1, #3a3a3a);
+      color: $grey1;
       text-shadow: 0 4px 4px rgb(0 0 0 / 25%);
-      font-family: Poppins;
       font-size: 40px;
       font-style: normal;
       font-weight: 700;
       line-height: 120%;
-
-      /* 48px */
-      //width: 422px;
     }
 
     &-p {
-      color: var(--Color-Gray-2, #616161);
-      font-family: Poppins;
+      color: $grey2;
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
       line-height: 150%;
-
-      /* 24px */
-      //width: 368px;
       padding: 0 0 25px;
     }
 
     &-button {
-      background: var(--Primary, #b88e2f);
-      color: var(--Color-White, #fff);
-      font-family: Poppins;
+      background: $primary;
+      color: $white;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
       line-height: 150%;
       width: 176px;
       height: 48px;
-
-      /* 24px */
     }
   }
 
@@ -70,34 +60,14 @@
 
         &-1 {
           position: relative;
-
-          //width: 404px;
           height: 582px;
           display: flex;
-
-          //max-width: 100%;
-          //max-height: 100%;
-          //height: auto;
         }
 
         &-2 {
           width: 372px;
           height: 486px;
-
-          //display: flex;
-          //max-width: 100%;
-          //max-height: 100%;
-          //height: auto;
         }
-
-        /* &-3 {
-                    //width: 372px;
-                    //height: 486px;
-                    //display: flex;
-                    //max-width: 100%;
-                    //max-height: 100%;
-                    //height: auto;
-                } */
       }
 
       &-title {
@@ -105,6 +75,8 @@
         top: 428px;
         left: 24px;
         width: 217px;
+
+        // TODO: [Tonto] use variable
         background: rgb(255 255 255 / 72%);
         backdrop-filter: blur(1.5px);
         gap: 8px;
@@ -112,6 +84,7 @@
         max-height: 100%;
         height: auto;
 
+        // TODO: [Tonto] don't use number as class names
         &-1 {
           display: flex;
           flex-direction: row;
@@ -120,35 +93,31 @@
 
           &-img {
             stroke-width: 1px;
-            stroke: var(--Color-Gray-2, #616161);
+            stroke: $grey2;
           }
         }
 
+        // TODO: [Tonto] don't use number as class names
         &-2 {
           display: flex;
           flex-direction: row;
           padding: 24px 8px 32px 32px;
 
           &-p {
-            color: var(--Color-Gray-2, #616161);
-            font-family: Poppins;
+            color: $grey2;
             font-size: 16px;
             font-style: normal;
             font-weight: 500;
             line-height: 150%;
-
-            /* 24px */
           }
 
+          // TODO: [Tonto] don't use tag name as class names
           &-h1 {
-            color: var(--Color-Gray-1, #3a3a3a);
-            font-family: Poppins;
+            color: $grey1;
             font-size: 24px;
             font-style: normal;
             font-weight: 600;
             line-height: 120%;
-
-            /* 33.6px */
           }
         }
       }
@@ -159,7 +128,7 @@
         left: 241px;
         width: 48px;
         height: 48px;
-        background: var(--Primary, #b88e2f);
+        background: $primary;
       }
     }
 
@@ -171,7 +140,9 @@
       height: 72px;
       background: none;
       border-radius: 5px;
-      fill: var(--Color-White, #fff);
+      fill: $white;
+
+      // TODO: [Tonto] use variable
       filter: drop-shadow(0 4px 14px rgb(0 0 0 / 16%));
       background-image: url("../src/assets/icons/ellipse4.svg");
       display: flex;

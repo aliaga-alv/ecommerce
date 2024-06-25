@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "gulp",
     "sass-w": "gulp style",
-    "lint": "stylelint \"src/**/*.scss\" --fix"
+    "lint": "stylelint \"src/**/*.scss\" --fix",
+    "prettier:fix": "prettier --write .",
+    "prettier:check": "prettier --check ."
   },
   "author": "",
   "license": "ISC",
@@ -29,8 +31,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "eslint",
-      "prettier --write",
+      "npm run lint",
+      "npm run prettier:fix",
       "git add ."
     ]
   }

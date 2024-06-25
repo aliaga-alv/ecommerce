@@ -3,30 +3,27 @@
   padding: 65px 0 50px;
   overflow: hidden;
   justify-content: space-between;
- 
 
   &-title {
     position: absolute;
   }
 
   &-p {
-    color: var(--Color-Gray-2, #616161);
+    color: $grey2;
     text-align: center;
-    font-family: Poppins;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 150%; 
+    line-height: 150%;
   }
 
   &-h1 {
-    color: var(--Color-Gray-1, #3a3a3a);
+    color: $grey1;
     text-align: center;
-    font-family: Poppins;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%; 
+    line-height: 100%;
   }
 
   &__images {

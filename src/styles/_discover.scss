@@ -10,7 +10,7 @@
   &__content {
     display: flex;
     position: absolute;
-    background-color: #fff3e3;
+    background-color: $cream2;
     width: 643px;
     height: 443px;
     top: calc(100% - 443px);
@@ -22,13 +22,12 @@
       text-align: left;
       display: flex;
       flex-direction: column;
-      gap:     17px;
+      gap: 17px;
       width: 559px;
     }
 
     &-titleMeta {
-      color: var(--Font-Color, #333);
-      font-family: Poppins;
+      color: $fontColor;
       font-size: 16px;
       font-style: normal;
       font-weight: 600;
@@ -37,17 +36,16 @@
     }
 
     &-title {
-      color: var(--Primary, #b88e2f);
-      font-family: Poppins;
+      color: $primary;
       font-size: 52px;
       font-style: normal;
       font-weight: 700;
       line-height: 65px; /* 125% */
     }
 
+    // TODO:[Qurban] don't use tag name as a class name
     &-p {
-      color: var(--Font-Color, #333);
-      font-family: Poppins;
+      color: $fontColor;
       font-size: 18px;
       font-style: normal;
       font-weight: 500;
@@ -58,7 +56,7 @@
       padding: 25px 72px;
       display: inline;
       align-items: center;
-      background: var(--Primary, #b88e2f);
+      background: $primary;
       text-transform: uppercase;
       font-size: 16px;
       font-weight: 700;

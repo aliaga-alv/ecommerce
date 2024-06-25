@@ -1,25 +1,22 @@
-@import "_reset";
-@import "_variables";
+@import "reset";
+@import "variables";
+@import "card";
+@import "modal";
 
-@import "_logo";
-@import "_card";
-@import "_modal";
+// index.html
+@import "header";
+@import "product";
+@import "browsetherange";
+@import "footer";
+@import "discover";
+@import "inspirations";
+@import "funiro";
 
-//index.html
-@import "_header";
-@import "_product";
-@import "_browsetherange";
-@import "_footer";
-@import "_discover";
-@import "_inspirations";
-@import "_funiro";
+// shop.html
+@import "filter";
+@import "shop";
+@import "visit";
+@import "quality";
 
-//shop.html
-@import "_filter";
-@import "_shop";
-@import "_visit";
-@import "_showMeButton";
-@import "_quality";
-
-//relatedProduct.html
-@import "_relatedProduct";
+// relatedProduct.html
+@import "relatedProduct";

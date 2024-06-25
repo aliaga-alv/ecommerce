@@ -1,159 +1,135 @@
 .filter {
-    //width: 1440px;
-    //height: 100px;
-    //flex-shrink: 0;
-    background: #F9F1E7;
-    padding: 22px 100px;
+  background: $cream;
+  padding: 22px 100px;
+  display: flex;
+
+  &__buttons {
+    border-right: 1px $fontLight;
     display: flex;
+    gap: 24px;
 
-    &__buttons {
-        border-right: 1px #9F9F9F;
-        display: flex;
-        gap: 24px;
+    &-filtering {
+      display: flex;
+      gap: 12px;
+      align-items: center;
 
-        &-filtering {
-            display: flex;
-            gap: 12px;
-            align-items: center;
+      &-a {
+        width: 27px;
+        height: 26px;
+        background-image: url("../src/assets/icons/filtering.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
 
-            &-a {
-                width: 27px;
-                height: 26px;
-                background-image: url("../src/assets/icons/filtering.svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-
-            }
-
-            &-h1 {
-                color: #000;
-                font-family: Poppins;
-                font-size: 20px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: normal;
-            }
-
-
-        }
-
-        &-listing {
-            display: flex;
-            gap: 12px;
-            align-items: center;
-
-            &-grid {
-                width: 27px;
-                height: 26px;
-                background-image: url("../src/assets/icons/grid-filtering.svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-
-            }
-
-            &-viewlist {
-                width: 27px;
-                height: 26px;
-                background-image: url("../src/assets/icons/view-list-filtering.svg");
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                background-color: none;
-            }
-
-        }
-
-
-    }
-
-    &__result-text {
-        color: #000;
-        font-family: Poppins;
-        font-size: 16px;
+      // TODO: [Tonto] don't give styles to tag names
+      &-h1 {
+        color: $black;
+        font-size: 20px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        align-content: center;
+      }
     }
 
-    &__inputs {
-        border-right: 1px #9F9F9F;
-        gap: 24px;
-        display: flex;
-        margin-left: auto;
-        align-items: center;
+    &-listing {
+      display: flex;
+      gap: 12px;
+      align-items: center;
 
+      &-grid {
+        width: 27px;
+        height: 26px;
+        background-image: url("../src/assets/icons/grid-filtering.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
 
-        &-show {
-            color: #000;
-            font-family: Poppins;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-
-            &-count {
-                width: 55px;
-                height: 55px;
-                flex-shrink: 0;
-            }
-        }
-
-
-        &-short {
-            color: #000;
-            font-family: Poppins;
-            font-size: 20px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-        }
-
-        &-select {
-            width: 188px;
-            height: 55px;
-            flex-shrink: 0;
-        }
+      &-viewlist {
+        width: 27px;
+        height: 26px;
+        background-image: url("../src/assets/icons/view-list-filtering.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-color: none;
+      }
     }
+  }
+
+  &__result-text {
+    color: $black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-content: center;
+  }
+
+  &__inputs {
+    border-right: 1px $fontLight;
+    gap: 24px;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+
+    &-show {
+      color: $black;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      &-count {
+        width: 55px;
+        height: 55px;
+        flex-shrink: 0;
+      }
+    }
+
+    &-short {
+      color: $black;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &-select {
+      width: 188px;
+      height: 55px;
+      flex-shrink: 0;
+      color: $fontLight;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border: none;
+      background-color: white;
+      appearance: none;
+      padding-left: 30px;
+
+      option {
+        color: $fontLight;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
 }
 
 /* Firefox */
+// TODO: [Tonto] don't give styles to tag names
 input[type="number"] {
-    appearance: textfield;
-    color: #9F9F9F;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-align: center;
-    border: none;
-}
-
-
-.filter__inputs-select {
-    color: #9F9F9F;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border: none;
-    background-color: white;
-    appearance: none;
-    padding-left: 30px;
-    
-}
-
-.filter__inputs-select > option {
-    color: #9F9F9F;
-    font-family: Poppins;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    
-    
+  appearance: textfield;
+  color: $fontLight;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  border: none;
 }

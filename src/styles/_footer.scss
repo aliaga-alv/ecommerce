@@ -1,133 +1,124 @@
 .footer {
   display: flex;
   flex-direction: column;
-}
 
-.footer__body {
-  display: flex;
-  padding-top: 48px;
-  justify-content: space-around;
-  gap: 50px;
-  padding: 48px 102.1px;
-
-  &-line {
-    padding: 0 102.1px 1px;
-    margin: 0 102.1px;
-  }
-
-  &-logo {
+  &__body {
     display: flex;
-    flex-direction: column;
-    width: 33.3%;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 48px 102.1px;
 
-    h1 {
-      color: #000;
-      font-family: Poppins;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+    &-line {
+      padding: 0 102.1px 1px;
+      margin: 0 102.1px;
     }
 
-    p {
-      color: #9f9f9f;
-      font-family: Poppins;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      padding-top: 50px;
-    }
-  }
-
-  &-info {
-    width: 33.3%;
-    display: flex;
-    margin-left: auto;
-    flex-direction: row;
-    gap: 70px;
-
-    &-content {
+    &-logo {
       display: flex;
       flex-direction: column;
-      gap: 46px;
+      width: 33.3%;
 
-      &-link {
-        text-decoration: none;
-        list-style-type: none;
-        list-style: none;
-        cursor: pointer;
+      // TODO: [Cavid] don't give styles to tag names
+      h1 {
+        color: $black;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
 
-        &-h1 {
-          color: #9f9f9f;
-          font-family: Poppins;
+      p {
+        color: $fontLight;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 50px;
+      }
+    }
+
+    &-info {
+      width: 33.3%;
+      display: flex;
+      margin-left: auto;
+      flex-direction: row;
+      gap: 70px;
+
+      &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+
+        &-link {
+          text-decoration: none;
+          list-style-type: none;
+          cursor: pointer;
+
+          &-h1 {
+            color: $fontLight;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+
+        &-link a {
+          text-decoration: none;
+          list-style-type: none;
+          cursor: pointer;
+          color: #000;
           font-size: 16px;
           font-style: normal;
           font-weight: 500;
           line-height: normal;
         }
       }
+    }
 
-      &-link a {
-        text-decoration: none;
-        list-style-type: none;
-        list-style: none;
-        cursor: pointer;
-        color: #000;
-        font-family: Poppins;
+    &-form {
+      & :nth-child(1) {
+        color: $fontLight;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
       }
-    }
-  }
 
-  &-form {
-    & :nth-child(1) {
-      color: #9f9f9f;
-      font-family: Poppins;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
+      &-detail {
+        display: flex;
+        padding-top: 50px;
+        gap: 5px;
+
+        &-click {
+          color: $black;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          border-bottom: 1px solid $black;
+        }
+
+        &-input {
+          width: 200px;
+          border: none;
+          border-bottom: 1px solid $black;
+        }
+      }
     }
 
-    &-detail {
+    &-rights {
       display: flex;
-      padding-top: 50px;
-      gap: 5px;
+      padding: 38px 0;
 
-      &-click {
-        color: #000;
-        font-family: Poppins;
-        font-size: 14px;
+      &-data {
+        color: $black;
+        font-size: 16px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: normal;
-        border-bottom: 1px solid black;
+        padding: 0 0 0 102.1px;
       }
-
-      &-input {
-        width: 200px;
-        border: none;
-        border-bottom: 1px solid black;
-      }
-    }
-  }
-
-  &-rights {
-    display: flex;
-    padding: 38px 0;
-
-    &-data {
-      color: #000;
-      font-family: Poppins;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      padding: 0 0 0 102.1px;
     }
   }
 }
