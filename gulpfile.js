@@ -10,14 +10,14 @@ function cleanCss() {
 
 function kompail() {
     return gulp
-        .src("./styles/style.scss")
+        .src("./src/styles/style.scss")
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(gulp.dest("./public"))
 
 }
 
 function sassWatch() {
-    gulp.watch(['./styles/*.scss'], kompail)
+    gulp.watch(['./src/styles/*.scss'], kompail)
 }
 
 function buildStyles() {

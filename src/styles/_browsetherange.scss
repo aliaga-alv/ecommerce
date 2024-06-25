@@ -1,7 +1,7 @@
 .browsetherange {
   display: flex;
   flex-direction: column;
-  padding: 56px 126px 56px 126px;
+  padding: 56px 126px;
 
   &__header-h1 {
     color: $fontColor;
@@ -25,7 +25,7 @@
 
   &__carts {
     display: flex;
-    padding: 56px 0px 56px 0px;
+    padding: 56px 0;
     justify-content: center;
     gap: 16px;
   }

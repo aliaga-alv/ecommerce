@@ -3,18 +3,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: #fff;
 
   &__logo {
     display: flex;
     gap: 5px;
     align-items: center;
+
     &-img {
       width: 50px;
       height: 32px;
     }
+
     &-title {
-      color: #000000;
+      color: #000;
       font-family: Montserrat;
       font-size: 34px;
       font-style: normal;
@@ -26,6 +28,7 @@
     &-list {
       display: flex;
       list-style-type: none;
+
       &-title {
         padding-right: 75px;
         color: #000;
@@ -34,11 +37,10 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
+
         a {
           text-decoration: none;
-          color: #000000;
           color: #000;
-
           font-family: Poppins;
           font-size: 16px;
           font-style: normal;
@@ -48,6 +50,7 @@
       }
     }
   }
+
   &__burger {
     &-icon {
       padding-right: 45px;

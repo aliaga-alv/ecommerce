@@ -1,18 +1,20 @@
 .shop {
-  padding: 56px 102px 69px 102px;
+  padding: 56px 102px 69px;
+
   &__nextButton {
     display: flex;
     justify-content: center;
     color: aqua;
     gap: 38px;
     margin-top: 70px;
+
     .active,
     &-a:hover {
       background-color: $primary;
       color: $white;
     }
+
     &-btn {
-      border-radius: 10px;
       border: none;
       padding: 15px 30px;
       font-family: Poppins;
@@ -22,6 +24,7 @@
       line-height: normal;
       border-radius: 10px;
       background: #f9f1e7;
+
       a {
         color: #000;
         text-decoration: none;
@@ -38,6 +41,7 @@
     font-weight: 700;
     line-height: 120%; /* 48px */
   }
+
   &__cards {
     margin-top: 32px;
     display: flex;

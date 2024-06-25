@@ -1,7 +1,6 @@
 .funiro {
   flex-direction: column;
-  padding: 65px 0px 50px;
-  
+  padding: 65px 0 50px;
   overflow: hidden;
   justify-content: space-between;
  
@@ -31,7 +30,6 @@
   }
 
   &__images {
-   
     display: flex;
     gap: 16px;
     align-items: center;
@@ -47,23 +45,28 @@
         display: flex;
         gap: 16px;
         align-items: baseline;
+
         &-image1 {
           width: 274px;
           height: 382px;
         }
+
         &-image3 {
           width: 400px;
           height: 312px;
         }
       }
+
       &-bot {
         display: flex;
         gap: 16px;
         align-items: start;
+
         &-image2 {
           width: 270px;
           height: 323px;
         }
+
         &-image4 {
           width: 344px;
           height: 242px;
@@ -75,6 +78,7 @@
       display: flex;
       position: relative;
       width: 100%;
+
       &-image5 {
         margin: 0 auto;
       }
@@ -89,23 +93,28 @@
         display: flex;
         gap: 16px;
         align-items: baseline;
+
         &-image7 {
           width: 290px;
           height: 348px;
         }
+
         &-image9 {
           width: 425px;
           height: 433px;
         }
       }
+
       &-bot {
         display: flex;
         gap: 16px;
         align-items: start;
+
         &-image6 {
           width: 178px;
           height: 242px;
         }
+
         &-image8 {
           width: 500px;
         }

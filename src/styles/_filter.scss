@@ -3,7 +3,7 @@
     //height: 100px;
     //flex-shrink: 0;
     background: #F9F1E7;
-    padding: 22px 100px 22px 100px;
+    padding: 22px 100px;
     display: flex;
 
     &__buttons {
@@ -19,7 +19,7 @@
             &-a {
                 width: 27px;
                 height: 26px;
-                background-image: url(../assets/icons/filtering.svg);
+                background-image: url("../src/assets/icons/filtering.svg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -46,7 +46,7 @@
             &-grid {
                 width: 27px;
                 height: 26px;
-                background-image: url(../assets/icons/grid-filtering.svg);
+                background-image: url("../src/assets/icons/grid-filtering.svg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -56,7 +56,7 @@
             &-viewlist {
                 width: 27px;
                 height: 26px;
-                background-image: url(../assets/icons/view-list-filtering.svg);
+                background-image: url("../src/assets/icons/view-list-filtering.svg");
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
@@ -80,7 +80,6 @@
 
     &__inputs {
         border-right: 1px #9F9F9F;
-        display: flex;
         gap: 24px;
         display: flex;
         margin-left: auto;
@@ -121,7 +120,7 @@
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
     appearance: textfield;
     color: #9F9F9F;
     font-family: Poppins;

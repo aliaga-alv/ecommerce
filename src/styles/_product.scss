@@ -1,10 +1,12 @@
 .product {
-  padding: 56px 102px 69px 102px;
+  padding: 56px 102px 69px;
+
   &__nextButton {
     display: flex;
     justify-content: center;
     color: aqua;
   }
+
   &__button {
     display: flex;
     justify-content: center;
@@ -21,6 +23,7 @@
     font-weight: 700;
     line-height: 120%; /* 48px */
   }
+
   &__cards {
     margin-top: 32px;
     display: flex;

@@ -1,27 +1,29 @@
 .quality {
   background: #faf3ea;
   display: flex;
-
   padding: 100px 0;
+
   &__wrapper {
     width: 100%;
     display: flex;
     margin: 0 auto;
     justify-content: space-around;
+
     &-icon {
       display: flex;
       justify-content: space-around;
       gap: 20px;
       align-items: self-end;
+
       & h3 {
         color: #242424;
-
         font-family: Poppins;
         font-size: 25px;
         font-style: normal;
         font-weight: 600;
         line-height: 150%;
       }
+
       & p {
         color: var(--Color-Gray-3, #898989);
         font-family: Poppins;
