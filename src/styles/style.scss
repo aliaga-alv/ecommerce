@@ -1,7 +1,9 @@
 @import "_reset";
 @import "_variables";
+
 @import "_logo";
 @import "_card";
+@import "_modal";
 
 //index.html
 @import "_header";
@@ -18,3 +20,6 @@
 @import "_visit";
 @import "_showMeButton";
 @import "_quality";
+
+//relatedProduct.html
+@import "_relatedProduct";
