@@ -1,0 +1,19 @@
+.relatedProduct {
+    padding: 100px 55px;
+    &__title {
+        color: $black;
+        font-family: Poppins;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+    }
+    &__cards {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+}
