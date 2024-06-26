@@ -37,5 +37,10 @@
       "npm run prettier:fix",
       "git add ."
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
   }
 }
