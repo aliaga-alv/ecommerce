@@ -10,7 +10,8 @@
     "lint": "stylelint \"src/**/*.scss\" --fix",
     "prettier:fix": "prettier --write .",
     "prettier:check": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "precommit": "lint-staged"
   },
   "author": "",
   "license": "ISC",
