@@ -9,7 +9,9 @@
     "sass-w": "gulp style",
     "lint": "stylelint \"src/**/*.scss\" --fix",
     "prettier:fix": "prettier --write .",
-    "prettier:check": "prettier --check ."
+    "prettier:check": "prettier --check .",
+    "prepare": "husky",
+    "precommit": "lint-staged"
   },
   "author": "",
   "license": "ISC",
@@ -35,5 +37,10 @@
       "npm run prettier:fix",
       "git add ."
     ]
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "npm run precommit"
+    }
   }
 }
