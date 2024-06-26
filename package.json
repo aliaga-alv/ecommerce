@@ -9,7 +9,8 @@
     "sass-w": "gulp style",
     "lint": "stylelint \"src/**/*.scss\" --fix",
     "prettier:fix": "prettier --write .",
-    "prettier:check": "prettier --check ."
+    "prettier:check": "prettier --check .",
+    "prepare": "husky"
   },
   "author": "",
   "license": "ISC",
