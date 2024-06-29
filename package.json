@@ -34,8 +34,7 @@
       "npm run lint"
     ],
     "**/*": [
-      "npm run prettier:fix",
-      "git add ."
+      "npm run prettier:fix"
     ]
   }
 }
