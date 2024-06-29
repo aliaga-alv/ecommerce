@@ -51,6 +51,10 @@
   }
 
   &__burger {
+    display: flex;
+    gap: 45px;
+    padding: 0 64px 0 0;
+
     a {
       button {
         border: none;
@@ -59,8 +63,52 @@
       }
     }
 
-    &-icon {
-      padding-right: 45px;
+    &-alert {
+      width: 28px;
+      height: 28px;
+      background: none;
+      background-image: url("../src/assets/icons/mdi_account-alert-outline.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-search {
+      width: 28px;
+      height: 28px;
+      background: none;
+      background-image: url("../src/assets/icons/akar-icons_search.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-like {
+      width: 28px;
+      height: 28px;
+      background: none;
+      background-image: url("../src/assets/icons/akar-icons_heart.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: none;
+      cursor: pointer;
+    }
+
+    &-cart {
+      width: 28px;
+      height: 28px;
+      background: none;
+      background-image: url("../src/assets/icons/ant-design_shopping-cart-outlined.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: none;
+      cursor: pointer;
     }
   }
 }

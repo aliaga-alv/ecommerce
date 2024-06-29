@@ -7,11 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "gulp",
     "sass-w": "gulp style",
-    "lint": "stylelint \"src/**/*.scss\" --fix",
+    "lint": "stylelint \"src/**/*.scss\"",
     "prettier:fix": "prettier --write .",
-    "prettier:check": "prettier --check .",
-    "prepare": "husky",
-    "precommit": "lint-staged"
+    "prettier:check": "prettier --check ."
   },
   "author": "",
   "license": "ISC",
@@ -32,15 +30,12 @@
     "stylelint-scss": "^6.3.2"
   },
   "lint-staged": {
+    "src/**/*.scss": [
+      "npm run lint"
+    ],
     "src/**/*": [
-      "npm run lint",
       "npm run prettier:fix",
       "git add ."
     ]
-  },
-  "husky": {
-    "hooks": {
-      "precommit": "npm run precommit"
-    }
   }
 }
