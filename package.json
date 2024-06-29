@@ -30,10 +30,10 @@
     "stylelint-scss": "^6.3.2"
   },
   "lint-staged": {
-    "src/**/*.scss": [
+    "*.scss": [
       "npm run lint"
     ],
-    "**/*": [
+    "*": [
       "npm run prettier:fix"
     ]
   }
