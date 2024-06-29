@@ -1,1 +1,1 @@
-npm run precommit
+npx --no-install lint-staged --allow-empty

@@ -1,7 +1,6 @@
 @import "reset";
 @import "variables";
 @import "card";
-@import "modal";
 
 // index.html
 @import "header";
@@ -20,3 +19,6 @@
 
 // relatedProduct.html
 @import "relatedProduct";
+
+// modal
+@import "cartsidebar";

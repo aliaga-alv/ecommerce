@@ -38,26 +38,10 @@
         </ul>
       </div>
       <div class="header__burger">
-        <img
-          class="header__burger-icon"
-          src="./src/assets/icons/mdi_account-alert-outline.svg"
-          alt=""
-        />
-        <img
-          class="header__burger-icon"
-          src="./src/assets/icons/akar-icons_search.svg"
-          alt=""
-        />
-        <img
-          class="header__burger-icon"
-          src="./src/assets/icons/akar-icons_heart.svg"
-          alt=""
-        />
-        <img
-          class="header__burger-icon"
-          src="./src/assets/icons/ant-design_shopping-cart-outlined.svg"
-          alt=""
-        />
+        <button class="header__burger-alert"></button>
+        <button class="header__burger-search"></button>
+        <button class="header__burger-like"></button>
+        <button id="cartBtn" class="header__burger-cart"></button>
       </div>
     </header>
 
@@ -434,15 +418,118 @@
         </div>
       </section>
 
-      <section id="cartModal" class="cartmodal">
-        <div class="cartmodal__body">
-          <div class="cartmodal__body-head">
-            <h1 class="cartmodal__body-heading">Shopping Cart</h1>
+      <section id="cartSidebar" class="cartsidebar">
+        <div class="cartsidebar__body">
+          <div class="cartsidebar__body-head">
+            <div class="cartsidebar__body-head-group">
+              <h1 class="cartsidebar__body-head-group-heading">
+                Shopping Cart
+              </h1>
+              <div class="cartsidebar__body-head-group-box">
+                <button
+                  id="cartClose"
+                  class="cartsidebar__body-head-group-box-button"
+                ></button>
+              </div>
+            </div>
+            <div class="cartsidebar__body-head-line"></div>
+          </div>
+          <div class="cartsidebar__body-products">
+            <div class="cartsidebar__body-products-product">
+              <img
+                class="cartsidebar__body-products-product-image"
+                src="./src/assets/images/asgaardsofa5.png"
+                alt=""
+              />
+              <div class="cartsidebar__body-products-product-text">
+                <h1 class="cartsidebar__body-products-product-text-heading">
+                  Asgaard sofa
+                </h1>
+                <div class="cartsidebar__body-products-product-text-pricetag">
+                  <h1
+                    class="cartsidebar__body-products-product-text-pricetag-count"
+                  >
+                    1
+                  </h1>
+                  <h1
+                    class="cartsidebar__body-products-product-text-pricetag-x"
+                  >
+                    x
+                  </h1>
+                  <h1
+                    class="cartsidebar__body-products-product-text-pricetag-price"
+                  >
+                    Rs. 250,000.00
+                  </h1>
+                </div>
+              </div>
+              <div class="cartsidebar__body-products-product-box">
+                <button
+                  class="cartsidebar__body-products-product-box-button"
+                ></button>
+              </div>
+            </div>
+            <div class="cartsidebar__body-products-product">
+              <img
+                class="cartsidebar__body-products-product-image"
+                src="./src/assets/images/asgaardsofa51.png"
+                alt=""
+              />
+              <div class="cartsidebar__body-products-product-text">
+                <h1 class="cartsidebar__body-products-product-text-heading">
+                  Casaliving Wood
+                </h1>
+                <div class="cartsidebar__body-products-product-text-pricetag">
+                  <h1
+                    class="cartsidebar__body-products-product-text-pricetag-count"
+                  >
+                    1
+                  </h1>
+                  <h1
+                    class="cartsidebar__body-products-product-text-pricetag-x"
+                  >
+                    x
+                  </h1>
+                  <h1
+                    class="cartsidebar__body-products-product-text-pricetag-price"
+                  >
+                    Rs. 270,000.00
+                  </h1>
+                </div>
+              </div>
+              <div class="cartsidebar__body-products-product-box">
+                <button
+                  class="cartsidebar__body-products-product-box-button"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <div class="cartsidebar__body-footer">
+            <div class="cartsidebar__body-footer-subtotal">
+              <h1 class="cartsidebar__body-footer-subtotal-heading">
+                Subtotal
+              </h1>
+              <h1 class="cartsidebar__body-footer-subtotal-price">
+                Rs. 520,000.00
+              </h1>
+            </div>
+            <div class="cartsidebar__body-footer-line"></div>
+            <div class="cartsidebar__body-footer-buttons">
+              <button class="cartsidebar__body-footer-buttons-cart">
+                Cart
+              </button>
+              <button class="cartsidebar__body-footer-buttons-checkout">
+                Checkout
+              </button>
+              <button class="cartsidebar__body-footer-buttons-comparsion">
+                Comparison
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
-      <script src="./scripts/modal.js"></script>
+      <script src="./scripts/cartsidebar.js"></script>
     </main>
     <footer class="footer">
       <div class="footer__body">
