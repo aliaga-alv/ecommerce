@@ -33,7 +33,7 @@
     "src/**/*.scss": [
       "npm run lint"
     ],
-    "src/**/*": [
+    "**/*": [
       "npm run prettier:fix",
       "git add ."
     ]
