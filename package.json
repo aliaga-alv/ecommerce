@@ -31,9 +31,11 @@
   },
   "lint-staged": {
     "*.scss": [
-      "npm run lint && npm run prettier:fix"
+      "npm run lint",
+      "npm run prettier:fix",
+      "git add -A"
     ],
-    "*": [
+    "!(*.scss)": [
       "npm run prettier:fix",
       "git add -A"
     ]
